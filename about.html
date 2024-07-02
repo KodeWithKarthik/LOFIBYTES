@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Resetting default margins and box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic body styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        /* Navigation bar styles */
+        #bar {
+            background-color: #333;
+            padding: 15px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles for the unordered list */
+        #bar ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        /* Styles for list items in the navigation */
+        #bar ul li {
+            color: white;
+            margin-left: 30px;
+        }
+
+        /* Title style */
+        #tit {
+            font-size: 1.5em;
+            font-weight: 600;
+            padding-right: 20px;
+        }
+
+        #bar ul li#home a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Hover effect for HOME and ABOUT links */
+        #bar ul li#home:hover a,
+        #bar ul li#about:hover {
+            color: #50b3a2;
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav id="bar">
+        <ul>
+            <li id="tit">LOFIBYTES</li>
+            <li id="home"><a href="index.html">HOME</a></li>
+            <li id="about">ABOUT</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Created by</h1>
+        <p>Karthikeyan is a recent graduate with a BE in Computer Science from Yenepoya Institute of Technology, class of 2024. He has a strong foundation in web development, having created a music player web application using HTML, CSS, and JavaScript as an educational project. Karthikeyan is passionate about leveraging technology to build innovative solutions and is eager to further develop his skills in the tech industry.</p>
+    </div>
+</body>
+</html>

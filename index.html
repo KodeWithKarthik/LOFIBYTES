@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player App</title>
+</head>
+
+<body>
+    <nav id="bar">
+        <ul>
+            <li id="tit">LOFIBYTES</li>
+            <li id="home">HOME</li>
+            <li id="about"><a href="about.html">ABOUT</a></li>
+            <li id="search">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search..." name="q">
+                    <button id="submit" type="submit">Search</button>
+                </form>
+        </ul>
+    </nav>
+    <h1 id="tamil">TAMIL SONGS PLAYLIST</h1>
+    <div class="playlist">
+        <ul>
+            <button id="anirudhBtn"><img src="assets/buttons/ani.jfif" alt="Anirudh Ravichander" style="width: 100px; height: auto;"></button>
+            <button id="harishBtn"><img src="assets/buttons/harris.jfif" alt="Harris Jayaraj" style="width: 100px; height: auto;"></button>
+            <button id="tmsBtn"><img src="assets/buttons/GV.jfif" alt="G. V. Prakash Kumar" style="width: 100px; height: auto;"></button>
+            <button id="kkkBtn"><img src="assets/buttons/AR.jfif" alt="A.R Rahman" style="width: 100px; height: auto;"></button>
+        </ul>
+    </div>
+    <div class="container">
+        <nav>
+            <button>
+                <span class="material-icons">
+                    arrow_back_ios_new
+                </span>
+            </button>
+            <button>
+                <span class="material-icons">
+                    menu
+                </span>
+            </button>
+        </nav>
+        <main>
+            <audio id="audio" src="assets/song.mp3"></audio>
+            <section class="music">
+                <article class="album-art">
+                    <img src="assets/album-art.jpg" alt="Album Art">
+                </article>
+                <article class="song">
+                    <p class="title">Time in a Bottle</p>
+                    <p class="singer">Jim Croce</p>
+                </article>
+            </section>
+            <section class="slider">
+                <input type="range" id="slider" value="0" min="0" max="100">
+            </section>
+            <section class="controls">
+                <button id="prev">
+                    <span class="material-icons">
+                        fast_rewind
+                    </span>
+                </button>
+                <button id="play-pause" class="play">
+                    <span class="material-icons play-icon">
+                        play_arrow
+                    </span>
+                    <span class="material-icons pause-icon">
+                        pause
+                    </span>
+                </button>
+                <button id="next">
+                    <span class="material-icons">
+                        fast_forward
+                    </span>
+                </button>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
